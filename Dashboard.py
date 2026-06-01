@@ -729,7 +729,7 @@ with st.expander("Keterangan Sumber Data dan Metodologi"):
     """)
 
 st.caption(
-    "Data nutrisi: TKPI 2017 (Kemenkes RI) | "
+    "Data nutrisi: FatSecret "
     "AKG: Permenkes No. 28 Tahun 2019 | "
     "Model: YOLOv8 — 4.632 gambar pelatihan — 15 kelas makanan Indonesia"
 )
