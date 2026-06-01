@@ -94,7 +94,10 @@ with st.sidebar:
     gender     = st.radio("Jenis kelamin:", ["Laki-laki", "Perempuan"])
     gender_int = 0 if gender == "Laki-laki" else 1
     usia       = st.slider("Usia (tahun):", 1, 80, 25)
-    usia_str   = f"{usia} tahun"
+    if usia == 80:
+        usia_str = "80+"
+    else:
+        usia_str = f"{usia} tahun"
     kondisi    = "Normal"
     if gender == "Perempuan":
         kondisi = st.selectbox("Kondisi fisiologis:", [
