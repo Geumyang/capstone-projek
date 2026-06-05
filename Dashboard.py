@@ -9,7 +9,7 @@ from pathlib import Path
 # ─────────────────────────────────────────
 @st.cache_data
 def load_food_database():
-    df = pd.read_excel("Database.xlsx")
+    df = pd.read_csv("mastersheet_combined.csv")
     # Hapus baris yang tidak punya data nutrisi
     df = df.dropna(subset=["calories", "fat", "carbohydrate", "protein"])
     # Buat kolom kategori kalori per porsi
